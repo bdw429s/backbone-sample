@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Backbone.js Demo</title>
+</head>
+
+<body>
+
+  <div id="demoApp">
+
+  </div>
+  <br>
+  <button id="coolness">Change Brad to Ronald</button><br>
+  <button id="coolness2">Destroy Brad</button>
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/backbone.js"></script>
+  
+  <script src="js/demoApp.js"></script>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="person-template">
+      <%- person.get('name') %><br>
+      <%- person.get('age') %><br>
+      <%- person.sayHello() %><br>
+  </script>
+
+
+
+  </body>
+</html>
