@@ -9,7 +9,6 @@ $(function(){
             "view/:id": "viewSomeone"
         },
 		viewSomeone: function(id) {
-			doSomething(id);
 			var routedModel = window.app.myAppView.myPersonCollection.get(id);
 			if(routedModel) {
 				window.app.myAppView.viewDetails(routedModel);	

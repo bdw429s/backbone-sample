@@ -1,6 +1,7 @@
 
 _.templateSettings = {
-	interpolate : /#(.+?)#/g
+	interpolate: /#(.+?)#/g,
+	evaluate: /<%([^]*?)%>/g
 };
 
 $(function(){
@@ -14,6 +15,5 @@ $(function(){
 
     Backbone.history.start();	
 	window.app.myAppView = new window.app.appView();
-
 
 });

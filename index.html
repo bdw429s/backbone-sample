@@ -42,10 +42,19 @@
 		</script>
 	
 		<script type="text/template" id="person-template">
+			<%
+				isCool = person.get('cool');
+				if(isCool) {
+					var icon = 'thumbsUp.png';
+				} else {
+					var icon = 'thumbsDown.png';
+				}
+			%>
+			<img class="thumb" src="images/#icon#">
 			ID: #person.get('id')#<br>
 			Name: <a href="" class="editName">#person.get('name')#</a><br>
 			Age: <a href="" class="editAge">#person.get('age')#</a><br>
-			Quote: #person.sayHello()#><br>
+			Quote: #person.sayHello()#<br>
 		</script>
 		
 	</body>

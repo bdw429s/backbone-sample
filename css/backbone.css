@@ -41,7 +41,11 @@ button.new{
 	height: 50px;
 	width: auto;
 }
-
+.thumb{
+	height: 100px;
+	width: auto;
+	float: right;	
+}
 .delete {
 	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
