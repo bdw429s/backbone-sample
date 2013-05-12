@@ -25,7 +25,7 @@ $(function(){
 				{name: "Oivia Wood", age: 1.5, cool: true}
 			]);
 	
-    		this.myAppRouter = new window.app.appRouter;
+    		this.myAppRouter = new window.app.appRouter();
 			
 		},
 		events: {
